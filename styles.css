@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;               
+    background-position: center;
+}
+.calculator-container{
+    justify-content: center;
+    align-items: center;
+    background-color: #17181a8a;
+    border-radius: 25px;
+    backdrop-filter: blur(25px);
+    max-width: 380px;
+}
+
+.output-container{
+    border-radius: 20px;
+    border-color: antiquewhite;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    padding: 20px 40px 5px 20px;
+    text-align: end;
+    color: #8c918f;
+    min-height: 130px;
+
+}
+
+.buttons-grid{
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+
+}
+.btn{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    font-size: 25px;
+    font-family: "Montserrat";
+    font-weight: 800;
+    background-color: #373a40c0;
+    backdrop-filter: blur(5px);
+    outline: none;
+    border: none;
+    color: #8c918f;
+    border-color:  #373a40;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn:hover {
+    background-color: #4a4a4a;  
+    transform: scale(1.05);
+}
+.btn_zero {
+    grid-column: span 2; 
+    border-radius: 30px;
+    color: #8c918f;
+    font-size: 30px;
+    font-family: "Montserrat";
+    background-color: #373a40c0;
+    font-weight: 800;
+    outline: none;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn_zero:hover {
+    background-color: #4a4a4a;  
+    transform: scale(1.05);
+}
+.btn_del{
+    border-radius: 30px;  
+    color: #8c918f;
+    font-size: 25px;
+    font-family: "Montserrat";
+    background-color: #8e3333;
+    font-weight: 800;
+    outline: none;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn_del:hover{
+    background-color: rgb(158, 42, 42);
+    transform: scale(1.05);
+}
+.btn_equal {
+    grid-row: span 2; 
+    border-radius: 30px;
+    font-size: 50px;
+    font-family: "Montserrat";
+    background-color: #3d6c3f;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn_equal:hover {
+    background-color: #49864c;
+    transform: scale(1.05);
+  }
