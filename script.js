@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             currentInput = '0'
         }
         else if (value == "DEL"){
-            if (currentInput == "Err"){
+            if (currentInput == "Err" || currentInput == "Infinity"){
                 currentInput = '0'
             }
             else{
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 currentInput = "Err"
         }}
         else{
-            if(currentInput=="Err"){
+            if(currentInput=="Err" || currentInput == "Infinity"){
                 currentInput = value
             }
             else if(currentInput == '0' && value != "."){
