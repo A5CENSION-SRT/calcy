@@ -28,9 +28,12 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 currentInput = "Err"
         }}
         else{
-            if (currentInput == '0' && value != "."){
+            if(currentInput=="Err"){
                 currentInput = value
             }
+            else if(currentInput == '0' && value != "."){
+                currentInput = value
+            }   
             else{
                 currentInput += value
             }
